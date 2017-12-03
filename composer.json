@@ -1,0 +1,30 @@
+{
+    "name": "mabasic/mailchimp",
+    "description": "It subscribes an email address to your mailchimp list.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mario Basic",
+            "email": "mario.basic@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mabasic\\Mailchimp\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/support": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mabasic\\Mailchimp\\ServiceProvider"
+            ],
+            "aliases": {
+                "Mailchimp": "Mabasic\\Mailchimp\\Facade"
+            }
+        }
+    }
+}
