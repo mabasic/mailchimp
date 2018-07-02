@@ -19,7 +19,7 @@ First, add this to your `config/services.php` file:
 ```php
 'mailchimp' => [
     'key' => env('MAILCHIMP_KEY'),
-    'dc' => 'env('MAILCHIMP_DATA_CENTER', 'us1')
+    'dc' => env('MAILCHIMP_DATA_CENTER', 'us1')
 ]
 ```
 
